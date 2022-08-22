@@ -1,11 +1,11 @@
 //import './App.css';
 import React from "react";
 import "./App.css"
-import { TodoCounter } from "./TodoCounter";
-import { TodoSearch } from "./TodoSearch";
-import { TodoList } from "./TodoList";
-import { TodoItem } from "./TodoItem";
-import { CreateTodoButton } from "./CreateTodoButton";
+import { TodoCounter } from "../TodoCounter/TodoCounter.js";
+import { TodoSearch } from "../TodoSearch/TodoSearch.js";
+import { TodoList } from "../TodoList/TodoList.js";
+import { TodoItem } from "../TodoItem/TodoItem.js";
+import { CreateTodoButton } from "../CreateTodoButton/CreateTodoButton.js";
 
 
 const defaultTodos = [
