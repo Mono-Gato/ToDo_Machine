@@ -15,10 +15,10 @@ const todos = [
   },
   {
     text: 'Tomar el curso de intro', 
-    completed: false
+    completed: true
   },
   {
-    text: 'Llorar con la llorinas mientras ven el infierno', 
+    text: 'Llorar con la llorona mientras divisamos las puertas del infierno', 
     completed: false
   }
 ]

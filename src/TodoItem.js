@@ -2,13 +2,18 @@ import React from "react";
 import './TodoItem.css';
 
 function TodoItem(props) {
+    const onComplete = () => alert(`Ya completaste la tarea "${props.text}"`);
+    const onDelete = ()=> alert(`Borraste la tarea "${props.text}"`) 
     return(
         <li className="TodoItem">
-            <span className={`
-                Icon 
-                Icon-check 
-                ${props.completed && 'Icon-check--active'}`
-            }>
+            <span 
+                className={`
+                    Icon 
+                    Icon-check 
+                    ${props.completed && 'Icon-check--active'}`
+                }
+                onClick={onComplete}
+            >
                 ☑ 
             </span>
             <p className={`
@@ -17,11 +22,14 @@ function TodoItem(props) {
             }>
                 {props.text}
             </p>
-            <span className="
-                Icon
-                Icon-delete
-            ">
-                ⊗
+            <span 
+                className="
+                    Icon
+                    Icon-delete
+                "
+                onClick={onDelete}
+            >
+                x
             </span>
         </li>   
     )
