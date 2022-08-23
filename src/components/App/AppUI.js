@@ -6,6 +6,7 @@ import { TodoList } from "../TodoList/TodoList.js";
 import { TodoItem } from "../TodoItem/TodoItem.js";
 import { CreateTodoButton } from "../CreateTodoButton/CreateTodoButton.js";
 import { Modal } from "../Modal/Modal.js";
+import { TodoForm } from "../TodoForm/TodoForm.js";
 
 
 function AppUI() {
@@ -41,7 +42,7 @@ function AppUI() {
                 
             {!!openModal && (
                 <Modal>
-                    <p>Teletranportando</p>
+                    <TodoForm />
                 </Modal>
             )}
             <CreateTodoButton 
